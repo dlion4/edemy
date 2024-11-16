@@ -1,0 +1,13 @@
+.stars {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .star {
+    font-size: 54px;
+    color: #ccc;
+    margin: 0 5px;
+    transition: color 0.3s;
+  }
+  .star.active {
+    color: #f39c12; /* Highlighted star color */
+  }

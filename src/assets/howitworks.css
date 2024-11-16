@@ -1,0 +1,114 @@
+
+        /* body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        } */
+
+        h1 {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .containerx {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+            position: relative;
+           
+        }
+
+        .step {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .step img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 18px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .step:hover .overlay {
+            opacity: 1;
+        }
+
+        .step-title {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .arrow {
+            font-size: 30px;
+            color: gray;
+            user-select: none;
+            margin: 0 10px;
+        }
+
+        .arrow:hover {
+            color: black;
+            cursor: pointer;
+        }
+
+        .content {
+            margin-top: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content h2 {
+            margin-bottom: 10px;
+        }
+
+        /* Blinking and Movement Animation */
+        @keyframes blink {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+
+        @keyframes moveBackAndForth {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+            100% { transform: translateX(0); }
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        .move {
+            animation: moveBackAndForth 1s ease-in-out infinite;
+        }
+
+  
