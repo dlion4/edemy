@@ -1,16 +1,28 @@
 
+import { DotLottiePlayer } from '@dotlottie/react-player';
 
-export function MemberTutor(){
-    return (
-        <>
-            {/* Business Section */}
+export function MemberTutor() {
+  return (
+    <>
+      {/* Business Section */}
       <div className="business-area pb-100">
         <div className="container">
           <div className="business-bg rounded bg-color-f2f0ef ptb-100">
             <div className="row align-items-center">
               <div className="col-lg-7">
                 <div className="business-img">
-                  <img src="images/business-img.png" alt="business" />
+                  <script
+                    src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                    type="module"></script>
+
+                  <DotLottiePlayer
+                    src="https://lottie.host/7f97ea26-7f8b-4399-8982-14b780e0d46a/3f2ZzKMBEb.json"
+                    background="transparent"
+                    speed={0.5}
+                    style={{ width: "100%", height: "auto", maxWidth: "600px" }} // Fixed: Added a comma between width and height
+                    loop
+                    autoplay
+                  />
                 </div>
               </div>
               <div className="col-lg-5">
@@ -29,10 +41,10 @@ export function MemberTutor(){
           </div>
         </div>
       </div>
-        
-        </>
 
-    )
+    </>
+
+  )
 
 
 }

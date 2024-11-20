@@ -1,3 +1,5 @@
+import React from "react";
+import { DotLottiePlayer } from '@dotlottie/react-player';
 
 
 export function InfoAbout() {
@@ -15,17 +17,29 @@ export function InfoAbout() {
                     </p>
                     <div className="single-transform d-flex align-items-center">
                         <div className="transform-video-img flex-shrink-0">
-                            <img src="../images/courses/course-16.jpg" alt="about" />
-                            <a href="../auth/index.htm" className="video-btns popup-youtube">
-                                <i className="ri-play-circle-fill"></i>
-                            </a>
+
+
                         </div>
+
+
                     </div>
                 </div>
             </div>
             <div className="col-lg-6 wow animate__animated animate__fadeInRight delay-0-2s">
                 <div className="transform-img wow animate__animated animate__fadeInRight delay-0-8s">
-                    <img src="../images/transform-img-2.png" alt="about" />
+                    <script
+                        src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                        type="module"
+                    ></script>
+
+
+                    <DotLottiePlayer
+                        src="https://lottie.host/7f97ea26-7f8b-4399-8982-14b780e0d46a/3f2ZzKMBEb.json"
+                        background="transparent"
+                        speed={0.5}
+                        style={{ width: "100%", height: "auto", maxWidth: "600px" }}
+                        loop
+                        autoplay />
                 </div>
             </div>
         </div>

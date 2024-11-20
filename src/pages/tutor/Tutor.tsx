@@ -1,19 +1,22 @@
+import { Extra } from "../home/componets/extra";
+import { Tutor } from "../home/componets/tutor";
 import { HeroTutor } from "./components/hero";
-import { InfoTutor } from "./components/info";
-import { MemberTutor } from "./components/member";
+// import { Tutor } from "./componets/tutor";
 
 
 
 
-export function Tutor (){
+
+export function TutorPage (){
 
 
     return(
 
         <>
             <HeroTutor/>
-            <InfoTutor/>
-            <MemberTutor/>
+            <Tutor/>
+            
+            <Extra/>
         
         </>
 

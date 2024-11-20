@@ -55,102 +55,84 @@ export function TermsPolicy() {
                         <div className="main-content-text">
                             <h3>1. Accuracy and validity of information</h3>
                             <p>
-                                Proin eget tortor risus. Mauris blandit aliquet elit, eget
-                                tincidunt nibh pulvinar a. Quisque velit nisi, pretium ut lacinia
-                                in elementum id enim. Praesent sapien massa, convallis a
-                                pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna
-                                dictum porta. Curabitur non nulla sit amet nisl tempus convallis
-                                quis ac lectus. Vestibulum ac diam sit amet quam vehicula elementum
-                                sed sit amet dui. Donec rutrum congue leo eget malesuada. Donec
-                                rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta
-                                dapibus. Curabitur aliquet quam id ut lacinia in elementum id enim.
-                                Praesent sapien massa, convallis a pellentesque nec, egestas non nisi
-                                leo eget malesuada.
+                                Skillcobra strives to provide accurate and up-to-date information on our platform. However, we do not guarantee that all information is accurate, complete, or current. By using the platform, you acknowledge that the information provided may change without notice, and you agree to verify the accuracy of any information before taking action based on it.
                             </p>
                             <div className="gap-20"></div>
 
-                            <h3>2. Availability</h3>
+                            <h3>2. Availability of services</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-                                odio sequi! Nam consectetur, officiis ipsam explicabo tempore
-                                placeat! Voluptas molestiae pariatur necessitatibus consectetur, ullam
-                                aut esse amet debitis sint culpa.
+                                While we aim to offer continuous access to Skillcobra's services, we cannot guarantee that our platform will always be available. Skillcobra may experience downtime due to maintenance, technical issues, or unforeseen circumstances. We are not liable for any disruption in services.
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, placeat?
-                                Culpa ab est nemo perspiciatis quam, nesciunt reprehenderit voluptate
-                                id error corrupti doloremque exercitationem quis, iusto debitis velit
-                                eveniet ea.
+                                We recommend that users regularly check for updates and be mindful of any service interruptions.
                             </p>
                             <div className="gap-20"></div>
 
-                            <h3>3. Third party websites</h3>
+                            <h3>3. Third-party websites and links</h3>
                             <p>
-                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-                                Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem
-                                ut libero malesuada feugiat. Nulla porttitor accumsan tincidunt. Sed
-                                porttitor lectus nibh. Pellentesque in ipsum id orci porta dapibus.
-                            </p>
-                            <p>
-                                Quisque velit nisi, pretium ut lacinia in, elementum id enim. Proin
-                                eget tortor risus. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit. Curabitur aliquet quam id dui posuere blandit.
+                                Skillcobra may contain links to third-party websites for your convenience. We are not responsible for the content, privacy practices, or terms of use of these external sites. By clicking on any external links, you acknowledge and agree that Skillcobra is not responsible for the services or products provided by these third-party websites.
                             </p>
                             <div className="gap-20"></div>
 
                             <h3>4. Copyright and intellectual property</h3>
                             <p>
-                                Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus.
-                                Nulla porttitor accumsan tincidunt. Donec rutrum congue leo eget
-                                malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed
-                                sit amet dui. Vivamus magna justo, lacinia eget consectetur sed,
-                                convallis at tellus libero malesuada feugiat.
+                                All content, designs, logos, trademarks, and materials on Skillcobra are the property of Skillcobra or our partners. Unauthorized use, copying, or reproduction of any material is strictly prohibited. By accessing our platform, you agree to respect all intellectual property rights and not engage in activities that violate them.
                             </p>
                             <ul>
                                 <li>
-                                    <i className="ri-check-line"></i>Quisque velit nisi, pretium ut
-                                    lacinia in, elementum id enim.
+                                    <i className="ri-check-line"></i> All content on Skillcobra is protected by copyright and intellectual property laws.
                                 </li>
                                 <li>
-                                    <i className="ri-check-line"></i>Proin eget tortor risus
-                                    consectetur adipiscing elit.
+                                    <i className="ri-check-line"></i> Any unauthorized copying or distribution of content is prohibited.
                                 </li>
                                 <li>
-                                    <i className="ri-check-line"></i>Curabitur aliquet quam id dui
-                                    posuere blandit.
+                                    <i className="ri-check-line"></i> You may not use any content from Skillcobra for commercial purposes without prior written consent.
                                 </li>
                             </ul>
                             <div className="gap-20"></div>
 
-                            <h3>6. Termination of contract</h3>
+                            <h3>5. Termination of contract</h3>
                             <p>
-                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-                                Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem
-                                ut libero malesuada feugiat. Nulla porttitor accumsan tincidunt. Sed
-                                porttitor lectus nibh. Pellentesque in ipsum id orci porta dapibus.
+                                Skillcobra reserves the right to terminate or suspend your account at any time without prior notice if we believe you have violated these terms or engaged in any unlawful activity. Upon termination, you will no longer have access to our services, and any outstanding balances may be forfeited.
                             </p>
                             <p>
-                                Quisque velit nisi, pretium ut lacinia in, elementum id enim. Proin
-                                eget tortor risus. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit. Curabitur aliquet quam id dui posuere blandit.
+                                If you wish to terminate your account voluntarily, you may do so by contacting our support team. However, any fees paid are non-refundable.
                             </p>
                             <div className="gap-20"></div>
 
-                            <h3>7. Limitation of liability</h3>
+                            <h3>6. Limitation of liability</h3>
                             <p>
-                                Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt
-                                nibh pulvinar a. Quisque velit nisi, pretium ut lacinia in elementum
-                                id enim. Praesent sapien massa, convallis a pellentesque nec, egestas
-                                non nisi. Cras ultricies ligula sed magna dictum porta. Curabitur non
-                                nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ac diam
-                                sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue
-                                leo eget malesuada. Donec rutrum congue leo eget malesuada. Pellentesque
-                                in ipsum id orci.
+                                Skillcobra will not be held liable for any direct, indirect, incidental, or consequential damages arising from the use or inability to use our platform, including but not limited to lost data, lost profits, or damage to your computer system. By using Skillcobra, you agree that our liability is limited to the maximum extent permitted by law.
+                            </p>
+                            <div className="gap-20"></div>
+
+                            <h3>7. User obligations</h3>
+                            <p>
+                                By using Skillcobra, you agree to comply with all applicable laws and regulations. You are responsible for maintaining the confidentiality of your account and password, and you agree to notify Skillcobra immediately if you suspect any unauthorized use of your account.
+                            </p>
+                            <p>
+                                You may not use Skillcobra for any illegal activities, including but not limited to spamming, fraud, or distributing harmful content.
+                            </p>
+                            <div className="gap-20"></div>
+
+                            <h3>8. Modification of terms</h3>
+                            <p>
+                                Skillcobra reserves the right to update or modify these terms and conditions at any time. Any changes will be effective immediately upon posting on our platform. It is your responsibility to regularly review the terms for any updates.
+                            </p>
+                            <p>
+                                Your continued use of Skillcobra after any changes to the terms will be considered your acceptance of those changes.
+                            </p>
+                            <div className="gap-20"></div>
+
+                            <h3>9. Governing law</h3>
+                            <p>
+                                These terms and conditions are governed by the laws of Kenya. Any disputes arising from your use of Skillcobra will be resolved under the jurisdiction of the courts in Kenya.
                             </p>
                         </div>
                     </div>
                 </section>
             </div>
+
         </>
 
     )

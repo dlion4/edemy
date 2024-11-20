@@ -19,6 +19,7 @@ import { Route as rootRoute } from './routes/__root'
 const TutorLazyImport = createFileRoute('/tutor')()
 const TermsLazyImport = createFileRoute('/terms')()
 const StudentLazyImport = createFileRoute('/student')()
+const RefundLazyImport = createFileRoute('/refund')()
 const PrivacyLazyImport = createFileRoute('/privacy')()
 const FaqLazyImport = createFileRoute('/faq')()
 const CourseLazyImport = createFileRoute('/course')()
@@ -46,6 +47,12 @@ const StudentLazyRoute = StudentLazyImport.update({
   path: '/student',
   getParentRoute: () => rootRoute,
 } as any).lazy(() => import('./routes/student.lazy').then((d) => d.Route))
+
+const RefundLazyRoute = RefundLazyImport.update({
+  id: '/refund',
+  path: '/refund',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/refund.lazy').then((d) => d.Route))
 
 const PrivacyLazyRoute = PrivacyLazyImport.update({
   id: '/privacy',
@@ -142,6 +149,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrivacyLazyImport
       parentRoute: typeof rootRoute
     }
+    '/refund': {
+      id: '/refund'
+      path: '/refund'
+      fullPath: '/refund'
+      preLoaderRoute: typeof RefundLazyImport
+      parentRoute: typeof rootRoute
+    }
     '/student': {
       id: '/student'
       path: '/student'
@@ -176,6 +190,7 @@ export interface FileRoutesByFullPath {
   '/course': typeof CourseLazyRoute
   '/faq': typeof FaqLazyRoute
   '/privacy': typeof PrivacyLazyRoute
+  '/refund': typeof RefundLazyRoute
   '/student': typeof StudentLazyRoute
   '/terms': typeof TermsLazyRoute
   '/tutor': typeof TutorLazyRoute
@@ -189,6 +204,7 @@ export interface FileRoutesByTo {
   '/course': typeof CourseLazyRoute
   '/faq': typeof FaqLazyRoute
   '/privacy': typeof PrivacyLazyRoute
+  '/refund': typeof RefundLazyRoute
   '/student': typeof StudentLazyRoute
   '/terms': typeof TermsLazyRoute
   '/tutor': typeof TutorLazyRoute
@@ -203,6 +219,7 @@ export interface FileRoutesById {
   '/course': typeof CourseLazyRoute
   '/faq': typeof FaqLazyRoute
   '/privacy': typeof PrivacyLazyRoute
+  '/refund': typeof RefundLazyRoute
   '/student': typeof StudentLazyRoute
   '/terms': typeof TermsLazyRoute
   '/tutor': typeof TutorLazyRoute
@@ -218,6 +235,7 @@ export interface FileRouteTypes {
     | '/course'
     | '/faq'
     | '/privacy'
+    | '/refund'
     | '/student'
     | '/terms'
     | '/tutor'
@@ -230,6 +248,7 @@ export interface FileRouteTypes {
     | '/course'
     | '/faq'
     | '/privacy'
+    | '/refund'
     | '/student'
     | '/terms'
     | '/tutor'
@@ -242,6 +261,7 @@ export interface FileRouteTypes {
     | '/course'
     | '/faq'
     | '/privacy'
+    | '/refund'
     | '/student'
     | '/terms'
     | '/tutor'
@@ -256,6 +276,7 @@ export interface RootRouteChildren {
   CourseLazyRoute: typeof CourseLazyRoute
   FaqLazyRoute: typeof FaqLazyRoute
   PrivacyLazyRoute: typeof PrivacyLazyRoute
+  RefundLazyRoute: typeof RefundLazyRoute
   StudentLazyRoute: typeof StudentLazyRoute
   TermsLazyRoute: typeof TermsLazyRoute
   TutorLazyRoute: typeof TutorLazyRoute
@@ -269,6 +290,7 @@ const rootRouteChildren: RootRouteChildren = {
   CourseLazyRoute: CourseLazyRoute,
   FaqLazyRoute: FaqLazyRoute,
   PrivacyLazyRoute: PrivacyLazyRoute,
+  RefundLazyRoute: RefundLazyRoute,
   StudentLazyRoute: StudentLazyRoute,
   TermsLazyRoute: TermsLazyRoute,
   TutorLazyRoute: TutorLazyRoute,
@@ -291,6 +313,7 @@ export const routeTree = rootRoute
         "/course",
         "/faq",
         "/privacy",
+        "/refund",
         "/student",
         "/terms",
         "/tutor"
@@ -316,6 +339,9 @@ export const routeTree = rootRoute
     },
     "/privacy": {
       "filePath": "privacy.lazy.tsx"
+    },
+    "/refund": {
+      "filePath": "refund.lazy.tsx"
     },
     "/student": {
       "filePath": "student.lazy.tsx"

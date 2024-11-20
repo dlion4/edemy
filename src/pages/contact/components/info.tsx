@@ -1,5 +1,6 @@
 
-
+import { useState } from "react";
+import { DotLottiePlayer } from "@dotlottie/react-player";
 
 
 export function InfoContact() {
@@ -14,33 +15,47 @@ export function InfoContact() {
                     <div className="row justify-content-center">
                         <div className="col-lg-4 col-md-6">
                             <div className="single-contact-info d-flex align-items-center">
-                                <img src="../images/contact-info-1.svg" alt="contact" />
+                                <div className="small-lottie-container" style={{ width: "100px", height: "100px", margin: "0 0 0 20px" }}>
+                                    <DotLottiePlayer
+                                        src="https://lottie.host/9003c986-8179-4c1c-ac71-1144d9623126/QRYVLHgLAx.json"
+                                        background="transparent"
+                                        speed={0.5}
+                                        style={{ width: "100%", height: "auto" }}
+                                        loop
+                                        autoplay
+                                    />
+                                </div>
+
                                 <div>
-                                    <h3>Call Us</h3>
+                                    <h3>Get Helpx</h3>
                                     <ul>
-                                        <li><a href="tel:+009-3867-321">+009 3867 321</a></li>
-                                        <li><a href="tel:+009-3867-532">+009 3867 532</a></li>
+                                        <a href="../cdn-cgi/l/email-protection.html#18707d747477587d7c7561367b7775">
+                                            <span className="__cf_email__" data-cfemail="help@skillcobra.com">
+                                                Help@skillcobra.com
+                                            </span>
+                                        </a>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6">
                             <div className="single-contact-info bg-f3dfc1 d-flex align-items-center">
-                                <img src="../images/contact-info-2.svg" alt="contact" />
+                                <DotLottiePlayer
+                                    src="https://lottie.host/9003c986-8179-4c1c-ac71-1144d9623126/QRYVLHgLAx.json"
+                                    background="transparent"
+                                    speed={0.5}
+                                    style={{ width: "100%", height: "auto", maxWidth: "600px" }} // Fixed: Added a comma between width and height
+                                    loop
+                                    autoplay
+                                />
                                 <div>
-                                    <h3>mail Us</h3>
+                                    <h3>Work with Us</h3>
                                     <ul>
-                                        <li>
-                                            <a href="../cdn-cgi/l/email-protection.html#18707d747477587d7c7561367b7775">
-                                                <span className="__cf_email__" data-cfemail="7d15181111123d18191004531e1210">
-                                                    [email&#160;protected]
-                                                </span>
-                                            </a>
-                                        </li>
+
                                         <li>
                                             <a href="../cdn-cgi/l/email-protection.html#e68f888089a683828b9fc885898b">
-                                                <span className="__cf_email__" data-cfemail="e38a8d858ca386878e9acd808c8e">
-                                                    [email&#160;protected]
+                                                <span className="__cf_email__" data-cfemail="instructor@skillcobra.com">
+                                                    Instructor@skillcobra.com
                                                 </span>
                                             </a>
                                         </li>
@@ -50,10 +65,27 @@ export function InfoContact() {
                         </div>
                         <div className="col-lg-4 col-md-6">
                             <div className="single-contact-info d-flex bg-a8e3da align-items-center">
-                                <img src="../images/contact-info-3.svg" alt="contact" />
+                                <DotLottiePlayer
+                                    src="https://lottie.host/9003c986-8179-4c1c-ac71-1144d9623126/QRYVLHgLAx.json"
+                                    background="transparent"
+                                    speed={0.5}
+                                    style={{ width: "100%", height: "auto", maxWidth: "600px" }} // Fixed: Added a comma between width and height
+                                    loop
+                                    autoplay
+                                />
                                 <div>
-                                    <h3>Visit Us</h3>
-                                    <p>Cecilia Chapman, 711-2880 Nulla St. Mississippi 96522</p>
+                                    <h3>Report Issues</h3>
+                                    <p>Contact us on whatsapp to get notifications </p>
+                                    <ul>
+
+                                        <li>
+                                            <a href="../cdn-cgi/l/email-protection.html#e68f888089a683828b9fc885898b">
+                                                <span className="__cf_email__" data-cfemail="support@skillcobra.com">
+                                                    Support@skillcobra.com
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +133,7 @@ export function InfoContact() {
                                             <div className="form-check">
                                                 <input name="check" className="form-check-input" type="checkbox" value="I agree to the terms and privacy policy." />
                                                 <label className="form-check-label">
-                                                    I agree to the <a href="../terms-conditions/index.htm">Terms &amp; conditions</a>
+                                                    I agree to the <a href="/terms/">Terms &amp; conditions</a>
                                                 </label>
                                                 <div className="help-block with-errors gridCheck-error"></div>
                                             </div>

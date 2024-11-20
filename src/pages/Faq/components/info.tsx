@@ -1,10 +1,14 @@
 
-
+import React, { useState } from 'react';
 
 
 export function FaqInfo() {
 
+    const [expanded, setExpanded] = useState(null);
 
+    const handleToggle = (id) => {
+        setExpanded(expanded === id ? null : id);
+    };
     return (
 
         <>
@@ -12,60 +16,141 @@ export function FaqInfo() {
             <div className="faq-area ptb-100">
                 <div className="container">
                     <div className="faq-accordion">
-                        <div data-accordion-component="Accordion" className="accordion">
-                            <div data-accordion-component="AccordionItem" className="accordion__item">
-                                <div data-accordion-component="AccordionItemHeading" role="heading" className="accordion__heading" aria-level={3}>
-                                    <div className="accordion__button" id="accordion__heading-a" aria-disabled="false" aria-expanded="true" aria-controls="accordion__panel-a" role="button" tabIndex={0} data-accordion-component="AccordionItemButton">
+                        <div className="accordion">
+                            <div className="accordion__item">
+                                <div
+                                    className="accordion__heading"
+                                    role="heading"
+                                    aria-level={3}
+                                >
+                                    <div
+                                        className="accordion__button"
+                                        onClick={() => handleToggle('a')}
+                                        aria-expanded={expanded === 'a'}
+                                        role="button"
+                                        tabIndex={0}
+                                    >
                                         How can I contact a school directly?
                                     </div>
                                 </div>
-                                <div data-accordion-component="AccordionItemPanel" className="accordion__panel" id="accordion__panel-a">
-                                    <p>You can contact a school by filling out a <a href="contact.html">“Contact Us”</a> form. This form can be found to the right of both the institute and education program profiles and also at the bottom of these profiles.</p>
-                                </div>
+                                {expanded === 'a' && (
+                                    <div className="accordion__panel" id="accordion__panel-a">
+                                        <p>
+                                            You can contact a school by filling out a{' '}
+                                            <a href="contact.html">“Contact Us”</a> form. This form can
+                                            be found to the right of both the institute and education
+                                            program profiles and also at the bottom of these profiles.
+                                        </p>
+                                    </div>
+                                )}
                             </div>
-
-                            <div data-accordion-component="AccordionItem" className="accordion__item">
-                                <div data-accordion-component="AccordionItemHeading" role="heading" className="accordion__heading" aria-level={3}>
-                                    <div className="accordion__button" id="accordion__heading-b" aria-disabled="false" aria-expanded="false" aria-controls="accordion__panel-b" role="button" tabIndex={0} data-accordion-component="AccordionItemButton">
+                            <div className="accordion__item">
+                                <div
+                                    className="accordion__heading"
+                                    role="heading"
+                                    aria-level={3}
+                                >
+                                    <div
+                                        className="accordion__button"
+                                        onClick={() => handleToggle('b')}
+                                        aria-expanded={expanded === 'b'}
+                                        role="button"
+                                        tabIndex={0}
+                                    >
                                         Where should I study abroad?
                                     </div>
                                 </div>
-                                <div data-accordion-component="AccordionItemPanel" className="accordion__panel" id="accordion__panel-b" hidden>
-                                    <p>You can contact a school by filling out a <a href="contact.html">“Contact Us”</a> form. This form can be found to the right of both the institute and education program profiles and also at the bottom of these profiles.</p>
-                                </div>
+                                {expanded === 'b' && (
+                                    <div className="accordion__panel" id="accordion__panel-b">
+                                        <p>
+                                            You can contact a school by filling out a{' '}
+                                            <a href="contact.html">“Contact Us”</a> form. This form can
+                                            be found to the right of both the institute and education
+                                            program profiles and also at the bottom of these profiles.
+                                        </p>
+                                    </div>
+                                )}
                             </div>
-
-                            <div data-accordion-component="AccordionItem" className="accordion__item">
-                                <div data-accordion-component="AccordionItemHeading" role="heading" className="accordion__heading" aria-level={3}>
-                                    <div className="accordion__button" id="accordion__heading-c" aria-disabled="false" aria-expanded="false" aria-controls="accordion__panel-c" role="button" tabIndex={0} data-accordion-component="AccordionItemButton">
+                            <div className="accordion__item">
+                                <div
+                                    className="accordion__heading"
+                                    role="heading"
+                                    aria-level={3}
+                                >
+                                    <div
+                                        className="accordion__button"
+                                        onClick={() => handleToggle('c')}
+                                        aria-expanded={expanded === 'c'}
+                                        role="button"
+                                        tabIndex={0}
+                                    >
                                         How do I find a study abroad program on Edmy.com?
                                     </div>
                                 </div>
-                                <div data-accordion-component="AccordionItemPanel" className="accordion__panel" id="accordion__panel-c" hidden>
-                                    <p>You can contact a school by filling out a <a href="contact.html">“Contact Us”</a> form. This form can be found to the right of both the institute and education program profiles and also at the bottom of these profiles.</p>
-                                </div>
+                                {expanded === 'c' && (
+                                    <div className="accordion__panel" id="accordion__panel-c">
+                                        <p>
+                                            You can contact a school by filling out a{' '}
+                                            <a href="contact.html">“Contact Us”</a> form. This form can
+                                            be found to the right of both the institute and education
+                                            program profiles and also at the bottom of these profiles.
+                                        </p>
+                                    </div>
+                                )}
                             </div>
-
-                            <div data-accordion-component="AccordionItem" className="accordion__item">
-                                <div data-accordion-component="AccordionItemHeading" role="heading" className="accordion__heading" aria-level={3}>
-                                    <div className="accordion__button" id="accordion__heading-d" aria-disabled="false" aria-expanded="false" aria-controls="accordion__panel-d" role="button" tabIndex={0} data-accordion-component="AccordionItemButton">
+                            <div className="accordion__item">
+                                <div
+                                    className="accordion__heading"
+                                    role="heading"
+                                    aria-level={3}
+                                >
+                                    <div
+                                        className="accordion__button"
+                                        onClick={() => handleToggle('d')}
+                                        aria-expanded={expanded === 'd'}
+                                        role="button"
+                                        tabIndex={0}
+                                    >
                                         How do I find a school where I want to study?
                                     </div>
                                 </div>
-                                <div data-accordion-component="AccordionItemPanel" className="accordion__panel" id="accordion__panel-d" hidden>
-                                    <p>You can contact a school by filling out a <a href="contact.html">“Contact Us”</a> form. This form can be found to the right of both the institute and education program profiles and also at the bottom of these profiles.</p>
-                                </div>
+                                {expanded === 'd' && (
+                                    <div className="accordion__panel" id="accordion__panel-d">
+                                        <p>
+                                            You can contact a school by filling out a{' '}
+                                            <a href="contact.html">“Contact Us”</a> form. This form can
+                                            be found to the right of both the institute and education
+                                            program profiles and also at the bottom of these profiles.
+                                        </p>
+                                    </div>
+                                )}
                             </div>
-
-                            <div data-accordion-component="AccordionItem" className="accordion__item">
-                                <div data-accordion-component="AccordionItemHeading" role="heading" className="accordion__heading" aria-level={3}>
-                                    <div className="accordion__button" id="accordion__heading-e" aria-disabled="false" aria-expanded="false" aria-controls="accordion__panel-e" role="button" tabIndex={0} data-accordion-component="AccordionItemButton">
+                            <div className="accordion__item">
+                                <div
+                                    className="accordion__heading"
+                                    role="heading"
+                                    aria-level={3}
+                                >
+                                    <div
+                                        className="accordion__button"
+                                        onClick={() => handleToggle('e')}
+                                        aria-expanded={expanded === 'e'}
+                                        role="button"
+                                        tabIndex={0}
+                                    >
                                         Am I eligible for admission?
                                     </div>
                                 </div>
-                                <div data-accordion-component="AccordionItemPanel" className="accordion__panel" id="accordion__panel-e" hidden>
-                                    <p>You can contact a school by filling out a <a href="contact.html">“Contact Us”</a> form. This form can be found to the right of both the institute and education program profiles and also at the bottom of these profiles.</p>
-                                </div>
+                                {expanded === 'e' && (
+                                    <div className="accordion__panel" id="accordion__panel-e">
+                                        <p>
+                                            You can contact a school by filling out a{' '}
+                                            <a href="contact.html">“Contact Us”</a> form. This form can
+                                            be found to the right of both the institute and education
+                                            program profiles and also at the bottom of these profiles.
+                                        </p>
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </div>

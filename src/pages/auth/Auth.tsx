@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import "../../../src/assets/images/register-img.png"
-import { registerImg } from '@/constants/images';
+
+import { DotLottiePlayer } from '@dotlottie/react-player';
+
 
 export function Auth() {
   const [isVisible, setIsVisible] = useState(false);
@@ -47,14 +49,26 @@ export function Auth() {
         </div>
       </div>
 
-      {/* Register/Login Section */}
+     
       <div className="register-area ptb-100">
         <div className="container">
           <div className="row align-items-center">
-            {/* Left Side Image */}
+          
             <div className="col-lg-6">
               <div className="register-img">
-                <img src={registerImg} alt="Auth Illustration" />
+                
+                <script
+                  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                  type="module"></script>
+
+                <DotLottiePlayer
+                  src="https://lottie.host/7f97ea26-7f8b-4399-8982-14b780e0d46a/3f2ZzKMBEb.json"
+                  background="transparent"
+                  speed={0.3}
+                  style={{ width: "100%", height: "auto", maxWidth: "600px" }} // Fixed: Added a comma between width and height
+                  loop
+                  autoplay
+                />
               </div>
             </div>
 

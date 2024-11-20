@@ -11,7 +11,7 @@ export function HeroStudent() {
             <div className="pages-banner-area ptb-100">
                 <div className="container">
                     <div className="pages-banner-content">
-                        <h2 style={{ opacity: 1, transform: "scale(0.8) translateZ(0)" }}>Courses</h2>
+                        <h2 style={{ opacity: 1, transform: "scale(0.8) translateZ(0)" }}>Students</h2>
                         <ul style={{ opacity: 1, transform: "scale(0.8) translateZ(0)" }}>
                             <li>
                                 <a href="/">

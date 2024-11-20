@@ -37,22 +37,14 @@ export function Navbar(){
                                 <li className="nav-item">
                                     <a className="nav-link" href="/">Home</a>
                                 </li>
-                                {/* <li className="nav-item">
-                                    
-                                    <a className="nav-link" href="/course/">Courses</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/about/">About</a>
-                                </li> */}
+                               
                                 <li className="nav-item">
                                     <a className="nav-link" href="/student/">For Student</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/tutor/"> For Instructor</a>
                                 </li>
-                                {/* <li className="nav-item">
-                                    <a className="nav-link" href="./auth/index.htm">Become An Instructor</a>
-                                </li> */}
+                                
                             </ul>
                         </div>
                         <div className="others-options">

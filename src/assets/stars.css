@@ -1,0 +1,17 @@
+.star-filled {
+    font-size: 2rem; /* Makes the stars larger */
+    color: #FFD700; /* Gold color; replace with your color code */
+  }
+  
+  .star-half {
+    font-size: 2rem; 
+    background: linear-gradient(90deg, #FFD700 50%, #ccc 50%); /* Half-filled star */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .star-empty {
+    font-size: 2rem; 
+    color: #ccc; /* Light gray for empty stars */
+  }
+  

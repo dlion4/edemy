@@ -1,0 +1,46 @@
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .features-list li {
+    margin-bottom: 10px; /* Space between list items */
+    margin: 10px 0 0;
+  }
+  
+  .features-list h6 {
+    margin: 0;
+    font-size: 10px; /* Adjust font size for h6 */
+    font-weight: bold;
+    margin: 10px 0 0;
+    
+  }
+  
+  .features-list p {
+    margin: 10px 0 0; /* Space between h6 and p */
+    font-size: 5px; /* Smaller font size for p */
+    color: #555; /* Customize text color as needed */
+    line-height: 1.5; /* Better readability */
+  }
+
+.d-flex {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: flex-start; /* Align items to the left */
+}
+
+.d-flex h6 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 8px 0 0;
+  
+}
+
+.d-flex p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 10px 0 0;
+}

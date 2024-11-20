@@ -1,6 +1,7 @@
+import { Extra } from "../home/componets/extra";
 import { HeroStudent } from "./components/hero";
 import { InfoStudent } from "./components/info";
-import { MemberStudent } from "./components/member";
+
 
 
 
@@ -13,7 +14,7 @@ export function Student (){
         <>
             <HeroStudent/>
             <InfoStudent/>
-            <MemberStudent/>
+            <Extra/>
         
         </>
 

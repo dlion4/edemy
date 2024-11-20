@@ -9,24 +9,18 @@ export function TopNavbar() {
       <div className="col-lg-8">
         <div className="header-left-content">
           <p>
-            Keep learning with free resources during COVID-19.
-            <a href="about-us/index.htm" className="read-more">
-              Learn more
-              <span className="ms-2">
-              <HiArrowLongRight size={24}  />
-
-              </span>
-            </a>
+          Learn marketable skills, talents and more
+            
           </p>
         </div>
       </div>
       <div className="col-lg-4">
         <ul className="header-right-content">
           <li>
-            <a href="auth/index.htm">Become An Instructor</a>
+            <a href="/courses/">Courses</a>
           </li>
           <li className="auth-link">
-            <a href="auth/index.htm">
+            <a href="/auth/">
               <span style={{height:"18px",width:"28px"}} className="me-2">
               <CiLogin/>
               </span>

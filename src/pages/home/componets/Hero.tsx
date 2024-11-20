@@ -5,7 +5,7 @@ import { DotLottiePlayer } from '@dotlottie/react-player';
 
 export function Hero() {
     // Split the sentence into an array of words and include spaces explicitly
-    const words = ["Improve", " ", "Your", " ", "Online", " ", "Learning", " ", "Experience"];
+    const words = ["Improve ", " ", "Your ", " ", "Online ", " ", "Learning ", " ", "Experience"];
 
     return (
         <>
@@ -22,20 +22,19 @@ export function Hero() {
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="banner-img">
-                                <img
-                                    src="https://lottie.host/752e67ee-269b-4517-a0b2-83dcb6b98f28/LDv11dCms2.lottie"
-                                    alt="banner"
-                                    style={{ transform: "scale(1) translateZ(1)" }}
-                                />
-                                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                                
+                                <script
+                                    src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                                    type="module"></script>
 
                                 <DotLottiePlayer
-                                    src="https://lottie.host/f2e5a949-a6d5-45e2-b46f-63680df84e08/5Ly8t4sHJK.json"
+                                    src="https://lottie.host/72f4f166-4b0a-40f3-a5e6-cd76751e79a7/CF1loKNtx7.json"
                                     background="transparent"
-                                    speed={1}
-                                    style={{ width: '600px', height: '600px' }}
+                                    speed={0.5}
+                                    style={{ width: "100%", height: "auto", maxWidth: "600px" }} // Fixed: Added a comma between width and height
                                     loop
-                                    autoplay />
+                                    autoplay
+                                />
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -84,8 +83,8 @@ export function Hero() {
                                 <ul className="client-list">
                                     <li>
                                         <p>
-                                            10K+ People already trusted us.
-                                            <a href="courses/index.htm" className="read-more">
+                                            1500+ People already trusted us.
+                                            <a href="/courses/" className="read-more">
                                                 View Courses
                                                 <i className="ri-arrow-right-line"></i>
                                             </a>

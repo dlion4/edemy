@@ -1,5 +1,6 @@
 
 
+import { DotLottiePlayer } from '@dotlottie/react-player';
 
 
 export function InfoTutor() {
@@ -55,7 +56,18 @@ export function InfoTutor() {
                         </div>
                         <div className="col-lg-6 wow animate__animated animate__fadeInRight delay-0-2s">
                             <div className="transform-img wow animate__animated animate__fadeInRight delay-0-8s">
-                                <img src="../images/transform-img-2.png" alt="about" />
+                                <script
+                                    src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                                    type="module"></script>
+
+                                <DotLottiePlayer
+                                    src="https://lottie.host/7f97ea26-7f8b-4399-8982-14b780e0d46a/3f2ZzKMBEb.json"
+                                    background="transparent"
+                                    speed={0.5}
+                                    style={{ width: "100%", height: "auto", maxWidth: "600px" }} // Fixed: Added a comma between width and height
+                                    loop
+                                    autoplay
+                                />
                             </div>
                         </div>
                     </div>

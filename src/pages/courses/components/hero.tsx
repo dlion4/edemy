@@ -1,5 +1,6 @@
 
 
+import { DotLottiePlayer } from '@dotlottie/react-player';
 
 
 export function HeroCourse() {

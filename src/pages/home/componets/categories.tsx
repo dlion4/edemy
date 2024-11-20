@@ -1,20 +1,27 @@
 
+import 'font-awesome/css/font-awesome.min.css';
 
 export function Categories(){
     const categories = [
-        { title: 'cgn', icon: 'flaticon-developer', link: 'category/cgn/index.htm' },
-        { title: 'Finance & Accounting', icon: 'flaticon-developer', link: 'category/finance-accounting/index.htm' },
-        { title: 'Business', icon: 'flaticon-developer', link: 'category/business/index.htm' },
-        { title: 'Photography & Video', icon: 'flaticon-developer', link: 'category/photography-video/index.htm' },
-        { title: 'zze', icon: 'flaticon-developer', link: 'category/zze/index.htm' },
-        { title: 'Music1', icon: 'flaticon-developer', link: 'category/music1-285/index.htm' },
-        { title: 'Office Productivity', icon: 'flaticon-developer', link: 'category/office-productivity/index.htm' },
-        { title: 'Health & Fitness', icon: 'flaticon-developer', link: 'category/health-fitness/index.htm' },
-        { title: 'this is a category', icon: 'flaticon-developer', link: 'category/this-is-a-category/index.htm' },
-        { title: 'Marketing', icon: 'flaticon-developer', link: 'category/marketing/index.htm' },
-        { title: 'IT & Software', icon: 'flaticon-developer', link: 'category/it-software/index.htm' },
-        { title: 'AI', icon: 'flaticon-developer', link: 'category/ai/index.htm' },
+        { title: 'Web Development', icon: 'fa fa-code' },
+        { title: 'Finance & Accounting', icon: 'fa fa-calculator' },
+        { title: 'Business', icon: 'fa fa-briefcase' },
+        { title: 'Photography', icon: 'fa fa-camera' },
+        { title: 'Design & Creative Arts', icon: 'fa fa-paint-brush' },
+        { title: 'Music & Audio', icon: 'fa fa-music' },
+        { title: 'Office Productivity', icon: 'fa fa-tasks' },
+        { title: 'Personal Development', icon: 'fa fa-lightbulb-o' },
+        { title: 'Marketing', icon: 'fa fa-line-chart' },
+        { title: 'IT & Software', icon: 'fa fa-desktop' },
+        { title: 'AI & Machine Learning', icon: 'fa fa-robot' },
+        { title: 'Video Editing', icon: 'fa fa-video-camera' },
+        { title: 'Content Writing', icon: 'fa fa-pencil' },
+        { title: 'Photo Editing', icon: 'fa fa-image' },
+        { title: 'Web Security', icon: 'fa fa-lock' },
+        { title: 'Server Configuration', icon: 'fa fa-server' },
+        { title: 'Software Configuration', icon: 'fa fa-cogs' },
       ];
+      
 
     return (
     <>
@@ -31,7 +38,7 @@ export function Categories(){
                 className="col-lg-3 col-sm-6"
                 style={{ opacity: 1, transform: 'scale(1) translateZ(1)' }}
                 >
-                <a href={category.link} className="single-categorie d-flex justify-content-between align-items-center">
+                <a className="single-categorie d-flex justify-content-between align-items-center">
                     <h3>{category.title}</h3>
                     <i className={category.icon}></i>
                 </a>
@@ -40,8 +47,8 @@ export function Categories(){
             <div className="col-lg-12">
                 <p className="text-center">
                 Browse All{' '}
-                <a href="courses/index.htm" className="read-more">
-                    Courses <i className="ri-arrow-right-line"></i>
+                <a href="/auth/" className="read-more">
+                    Categories <i className="ri-arrow-right-line"></i>
                 </a>
                 </p>
             </div>

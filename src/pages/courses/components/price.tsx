@@ -1,3 +1,4 @@
+import { DotLottiePlayer } from '@dotlottie/react-player';
 
 import "../../../assets/pricestudent.css"
 export function PriceCourse() {

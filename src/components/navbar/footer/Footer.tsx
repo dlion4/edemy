@@ -49,6 +49,9 @@ return (
                             <li>
                                 <a href="/terms/" className="link-item">Terms & Conditions</a>
                             </li>
+                            <li>
+                                <a href="/refund/" className="link-item">Refund Policy</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

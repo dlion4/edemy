@@ -1,4 +1,5 @@
 
+import { DotLottiePlayer } from '@dotlottie/react-player';
 
 
 
@@ -17,10 +18,18 @@ export function InfoCourse() {
                 <div className="col-lg-3 col-md-6">
                     <div className="single-courses">
                         <div className="courses-main-img">
-                            <img
-                                src="https://res.cloudinary.com/dev-empty/image/upload/v1713943088/ikjahrjvpnsirnbnj8li.jpg"
-                                alt="Live Acoustic Guitar and Electric Guitar Lessons"
-                            />
+                        <script
+                                    src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                                    type="module"></script>
+
+                                <DotLottiePlayer
+                                    src="https://lottie.host/7f97ea26-7f8b-4399-8982-14b780e0d46a/3f2ZzKMBEb.json"
+                                    background="transparent"
+                                    speed={0.5}
+                                    style={{ width: "100%", height: "auto", maxWidth: "600px" }} // Fixed: Added a comma between width and height
+                                    loop
+                                    autoplay
+                                />
                         </div>
                         <div className="courses-content">
                             <h3>Live Acoustic Guitar and Electric Guitar Lessons</h3>
